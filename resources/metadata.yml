@@ -1,0 +1,89 @@
+---
+paper: a4paper
+fontsize: 11pt
+pagestyle: plain
+links-as-notes: true
+title: "Dokument"
+subtitle: Untertitel
+author: [Autor]
+date: "01.01.1970"
+subject: "Markdown"
+keywords: [Markdown, Example]
+titlepage: true
+titlepage-color: 334477
+titlepage-text-color: FFFFFF
+titlepage-rule-color: FFFFFF
+toc-own-page: true
+footnotes-pretty: true
+classoption: [oneside]
+# abstract: Zusammenfassung
+# bibliography: ../bib.bib
+# csl: csl/apa.csl
+# lof: true
+# lot: true
+# toc: true
+# toc-depth: 2
+# thanks: Danksagungen
+# geometry:
+# - top=30mm
+# - left=20mm
+# - heightrounded
+# hyperrefoptions:
+# - linktoc=all
+# - pdfwindowui
+# - pdfpagemode=FullScreen
+latex-before-packages-includes:
+    - \usepackage[T1]{fontenc}
+    - \usepackage[utf8]{inputenc}
+    - \usepackage{lmodern}
+    - \usepackage[ngerman]{babel}
+    - \usepackage{datetime}
+    - \usepackage{fancyhdr}
+    - \usepackage{lastpage}
+    - \PassOptionsToPackage{labelfont=bf,labelsep=period,justification=raggedright}{caption}
+    - \topmargin 0cm
+    - \oddsidemargin 0.5cm
+    - \evensidemargin 0cm
+    - \textwidth 15cm
+    - \textheight 22cm
+    - \paperwidth 21cm
+    - \paperheight 29.7cm
+latex-after-packages-includes:
+    - \usepackage{pdflscape}
+    - \hypersetup{citecolor=green}
+    - \usepackage{hyperref}
+    - \PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+latex-header-includes:
+    - \pagestyle{headings}
+    - \pagestyle{myheadings}
+    - \pagestyle{fancy}
+    - \fancyhf{}
+    - \lhead{}
+    - \lhead{\leftmark}
+    - \lhead{}
+    - \chead{\leftmark\rightmark}
+    - \rhead{\rightmark}
+    - \rhead{}
+    - \lfoot{\today}
+    - \lfoot{}
+    - \cfoot{}
+    - \rfoot{Seite \thepage \hspace{1pt} von \pageref{LastPage}}
+    - \newcommand{\initiateLandscape}{\begin{landscape}}
+    - \newcommand{\terminateLandscape}{\end{landscape}}
+    - \renewcommand{\headrulewidth}{0.1pt}
+natbiboptions:
+    - numbers
+    - sort&compress
+    - round
+    - square
+    - curly
+    - angle
+    - colon
+    - comma
+    - authoryear
+    - super
+    - sort
+    - longnamesfirst
+    - sectionbib
+    - nonamebreak
+...
