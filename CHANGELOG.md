@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://bitbucket.org/schoolcraftteam/pandocker/branches/compare/v0.0.6..v0.0.7) (2021-06-13)
+
+
+### Features
+
+* add leaflet and letter template examples ([22bf63c](https://bitbucket.org/schoolcraftteam/pandocker/commits/22bf63ca91e517ef8a5d8717d1ac69c3f61886c2))
+
+
+### Bug Fixes
+
+* fix academic args in makefile ([2719e30](https://bitbucket.org/schoolcraftteam/pandocker/commits/2719e305e78638d0be23792cf5c41b15820a2679))
+
 ### [0.0.6](https://bitbucket.org/schoolcraftteam/pandocker/branches/compare/v0.0.5..v0.0.6) (2021-06-13)
 
 
