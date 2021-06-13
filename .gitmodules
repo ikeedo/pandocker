@@ -1,0 +1,3 @@
+[submodule "lua-filters"]
+	path = lua-filters
+	url = git@github.com:pandoc/lua-filters.git
