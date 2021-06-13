@@ -1,4 +1,4 @@
-pdf: eisvogel academic 
+default: eisvogel academic
 
 eisvogel:
 	pandoc  \
@@ -9,6 +9,9 @@ eisvogel:
 	--listings \
 	--citeproc \
 	--filter mermaid-filter \
+	--filter pandoc-codeblock-include \
+	--filter pandoc-include \
+	--filter pandoc-mustache \
 	--pdf-engine=xelatex \
 	--template=eisvogel \
 	--output=./data/eisvogel.pdf

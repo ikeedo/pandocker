@@ -23,6 +23,10 @@ footnotes-pretty: true
 classoption: [oneside]
 float-placement-figure: H
 table-use-row-colors: true
+
+mustache: ./data/variables.yaml
+
+# mainfont: Lato
 ...
 
 \newpage
@@ -205,6 +209,23 @@ Wie in Tabellen \ref{tab1}, \ref{tab2} und \ref{tab3} zu sehen, sind das Tabelle
 graph TD
     Start --> Stop
 ```
+
+## Includes
+
+### Codeblocks
+
+``` {include=data/bib.bib startFrom=2 endAt=3}
+```
+
+### Markdown
+
+!include data/includedfile
+
+## Variablen
+
+> The temperature in {{place}} was {{temperature}} degrees.
+
+_(Siehe Datei `data/variables.yaml`)_
 
 # Nicht numerierter Abschnitt {-}
 
