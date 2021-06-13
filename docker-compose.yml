@@ -8,4 +8,5 @@ services:
     container_name: pandocker
     volumes:
       - './data:/app/data'
+      - './Makefile:/app/Makefile'
       # - './resources:/app/resources'

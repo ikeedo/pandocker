@@ -17,11 +17,7 @@
     "release:major": "standard-version --release-as major",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npm-watch index",
-    "index": "npm run eisvogel && npm run academic",
-    "eisvogel": "pandoc ./data/index.md --number-sections -V lang=de --listings --citeproc --pdf-engine=xelatex --filter mermaid-filter --template=eisvogel --output=./data/eisvogel.pdf",
-    "academic": "pandoc ./resources/metadata.yml ./data/index.md --number-sections -V lang=de --listings --citeproc --pdf-engine=xelatex --to=latex --output=./data/academic.pdf",
-    "leaflet": "pandoc ./data/index.md -V lang=de --listings --citeproc --pdf-engine=xelatex --template=leaflet --output=./data/leaflet.pdf",
-    "letter": "pandoc ./data/index.md -V lang=de --template=letter --output=./data/letter.pdf"
+    "index": "make"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",

@@ -199,6 +199,13 @@ Table: Noch eine Tabelle \label{tab2}
 
 Wie in Tabellen \ref{tab1}, \ref{tab2} und \ref{tab3} zu sehen, sind das Tabellen.
 
+## Diagramme
+
+```mermaid
+graph TD
+    Start --> Stop
+```
+
 # Nicht numerierter Abschnitt {-}
 
 Lorem markdownum includite volenti monticolae videre vocem hac sparsit put gelidis vestros egressus sex. Undis eris per auguris armis. Est saevior pater.
