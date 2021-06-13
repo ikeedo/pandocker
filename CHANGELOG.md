@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://bitbucket.org/schoolcraftteam/pandocker/branches/compare/v0.0.5..v0.0.6) (2021-06-13)
+
+
+### Features
+
+* add include and moustache filters ([5f1dcc0](https://bitbucket.org/schoolcraftteam/pandocker/commits/5f1dcc0fce1e7cb9b468206df16386e328409480))
+
 ### [0.0.5](https://bitbucket.org/schoolcraftteam/pandocker/branches/compare/v0.0.4..v0.0.5) (2021-06-13)
 
 
