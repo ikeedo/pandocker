@@ -1,4 +1,4 @@
-default: eisvogel academic
+default: eisvogel academic leaflet letter
 
 eisvogel:
 	pandoc  \
@@ -36,18 +36,13 @@ academic:
 
 leaflet:
 	pandoc \
-	./data/index.md \
-	-V \
-	lang=de \
-	--listings \
-	--citeproc \
+	./data/leaflet.md \
 	--pdf-engine=xelatex \
 	--template=leaflet \
 	--output=./data/leaflet.pdf
 
 letter:
 	pandoc \
-	./data/index.md \
-	-V lang=de \
+	./data/letter.md \
 	--template=letter \
 	--output=./data/letter.pdf
