@@ -26,6 +26,10 @@ academic:
 	--listings \
 	--citeproc \
 	--filter mermaid-filter \
+	--filter pandoc-codeblock-include \
+	--filter pandoc-include \
+	--filter pandoc-mustache \
+	--filter mermaid-filter \
 	--pdf-engine=xelatex \
 	--to=latex \
 	--output=./data/academic.pdf
