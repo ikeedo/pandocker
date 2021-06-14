@@ -5,7 +5,7 @@
   "watch": {
     "index": {
       "patterns": [
-        "./data/index.md"
+        "**.md"
       ],
       "extensions": "md"
     }

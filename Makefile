@@ -1,8 +1,14 @@
-default: eisvogel academic leaflet letter
+default: index eisvogel academic leaflet letter
+
+index:
+	pandoc \
+	--defaults=./resources/defaults.yaml \
+	--metadata-file=./resources/metadata.yaml
 
 eisvogel:
 	pandoc  \
-	./data/index.md \
+	./index.md \
+	--metadata-file=./resources/metadata.yaml \
 	--number-sections \
 	-V \
 	lang=de \
@@ -14,12 +20,13 @@ eisvogel:
 	--filter pandoc-mustache \
 	--pdf-engine=xelatex \
 	--template=eisvogel \
-	--output=./data/eisvogel.pdf
+	--output=./pdf/eisvogel.pdf
 
 academic:
 	pandoc \
-	./resources/metadata.yml \
-	./data/index.md \
+	./resources/metadata2.yaml \
+	./index.md \
+	--metadata-file=./resources/metadata.yaml \
 	--number-sections \
 	-V \
 	lang=de \
@@ -32,17 +39,17 @@ academic:
 	--filter mermaid-filter \
 	--pdf-engine=xelatex \
 	--to=latex \
-	--output=./data/academic.pdf
+	--output=./pdf/academic.pdf
 
 leaflet:
 	pandoc \
-	./data/leaflet.md \
+	./resources/templates/leaflet.md \
 	--pdf-engine=xelatex \
 	--template=leaflet \
-	--output=./data/leaflet.pdf
+	--output=./pdf/leaflet.pdf
 
 letter:
 	pandoc \
-	./data/letter.md \
+	./resources/templates/letter.md \
 	--template=letter \
-	--output=./data/letter.pdf
+	--output=./pdf/letter.pdf

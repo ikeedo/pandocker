@@ -7,6 +7,8 @@ services:
     image: schoolcraft/pandocker
     container_name: pandocker
     volumes:
-      - './data:/app/data'
-      - './Makefile:/app/Makefile'
+      - './:/app'
+      # - './index.md:/app/index.md'
+      # - './Makefile:/app/Makefile'
       # - './resources:/app/resources'
+      # - './pdf:/app/pdf'

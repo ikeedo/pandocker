@@ -1,38 +1,3 @@
----
-papersize: a4
-fontsize: 11pt
-links-as-notes: true
-bibliography: data/bib.bib
-csl: resources/csl/apa.csl
-
-title: Titel
-subtitle: Untertitel
-author: [Autor]
-date: 01.01.1970
-subject: Markdown
-keywords: [Markdown, Example]
-abstract: Zusammenfassung
-
-lang: de
-titlepage: true
-titlepage-color: 334477
-titlepage-text-color: FFFFFF
-titlepage-rule-color: FFFFFF
-toc-own-page: true
-footnotes-pretty: true
-classoption: [oneside]
-float-placement-figure: H
-table-use-row-colors: true
-
-mustache: ./data/variables.yaml
-
-# mainfont: Lato
-...
-
-\newpage
-\tableofcontents
-\newpage
-
 # Markdown
 
 ## Text
@@ -111,11 +76,11 @@ Wie in Beispiel (@good) gezeigt, …
 
 ## Bilder
 
-![Das ist die Bildunterschrift\label{fig1}](data/md.png){ width=50% }
+![Das ist die Bildunterschrift\label{fig1}](resources/images/md.png){ width=50% }
 
 Abbildung \ref{fig1} zeigt das Markdown-Logo.
 
-Es geht auch im Textfluss: ![Bild im Textfluss\label{fig2}](data/md.png){ width=25% }\
+Es geht auch im Textfluss: ![Bild im Textfluss\label{fig2}](resources/images/md.png){ width=25% }\
 
 ## Referenzen
 
@@ -205,7 +170,7 @@ Wie in Tabellen \ref{tab1}, \ref{tab2} und \ref{tab3} zu sehen, sind das Tabelle
 
 ## Diagramme
 
-```mermaid
+```{.mermaid theme=forest caption="Caption Text Here"}
 graph TD
     Start --> Stop
 ```
@@ -214,18 +179,18 @@ graph TD
 
 ### Codeblocks
 
-``` {include=data/bib.bib startFrom=2 endAt=3}
+``` {include=resources/bib/bib.bib startFrom=2 endAt=3}
 ```
 
 ### Markdown
 
-!include data/includedfile
+!include resources/data/includedfile
 
 ## Variablen
 
 > The temperature in {{place}} was {{temperature}} degrees.
 
-_(Siehe Datei `data/variables.yaml`)_
+_(Siehe Datei `resources/variables.yaml`)_
 
 # Nicht numerierter Abschnitt {-}
 

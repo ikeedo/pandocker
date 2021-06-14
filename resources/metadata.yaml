@@ -1,0 +1,32 @@
+papersize: a4
+fontsize: 11pt
+links-as-notes: true
+bibliography: resources/bib/bib.bib
+csl: resources/csl/apa.csl
+
+title: Titel
+subtitle: Untertitel
+author: [Autor]
+date: 01.01.1970
+subject: Markdown
+keywords: [Markdown, Example]
+abstract: Zusammenfassung
+
+lang: de
+polyglossia-lang:
+    name: german
+    options:
+        - spelling=new,babelshorthands=true
+titlepage: true
+titlepage-color: 334477
+titlepage-text-color: FFFFFF
+titlepage-rule-color: FFFFFF
+toc-own-page: true
+footnotes-pretty: true
+classoption: [oneside]
+float-placement-figure: H
+table-use-row-colors: true
+
+mustache: ./resources/variables.yaml
+
+# mainfont: Lato

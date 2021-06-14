@@ -1,0 +1,54 @@
+from: markdown
+to: pdf
+
+input-files:
+- ./index.md
+output-file: ./pdf/index.pdf
+
+# eisvogel academic leaflet letter
+template: eisvogel
+standalone: true
+self-contained: false
+
+citeproc: true
+cite-method: citeproc
+
+filters:
+- ./lua-filters/latex-hyphen/latex-hyphen.lua
+- mermaid-filter
+- pandoc-codeblock-include
+- pandoc-include
+- pandoc-mustache
+
+# pdf-engine: pdflatex
+pdf-engine: xelatex
+
+# auto, preserve, or none
+wrap: auto
+columns: 78
+dpi: 72
+
+table-of-contents: true
+# toc: may also be used instead of table-of-contents:
+toc-depth: 3
+number-sections: true
+
+# a list of offsets at each heading level
+number-offset: [0,0,0,0,0,0]
+
+# builds toc starting from h2
+# shift-heading-level-by: 1
+
+strip-empty-paragraphs: true
+default-image-extension: ".png"
+
+listings: true
+
+reference-links: true
+# block, section, or document
+reference-location: block
+markdown-headings: setext
+
+# html-q-tags: false
+# css:
+# - site.css
