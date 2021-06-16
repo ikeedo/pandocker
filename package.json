@@ -1,6 +1,6 @@
 {
   "name": "pandocker",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Pandoc auto convert to pdf with npm-watch as entrypoint",
   "watch": {
     "index": {
