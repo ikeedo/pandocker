@@ -1,4 +1,4 @@
-default: index eisvogel academic leaflet letter
+default: index
 
 index:
 	pandoc \
