@@ -175,6 +175,13 @@ graph TD
     Start --> Stop
 ```
 
+```{.mermaid format=svg}
+pie title Pets adopted by volunteers
+    "Dogs" : 386
+    "Cats" : 85
+    "Rats" : 15
+```
+
 ## Includes
 
 ### Codeblocks
